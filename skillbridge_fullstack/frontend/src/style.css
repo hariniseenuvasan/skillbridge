@@ -1,0 +1,39 @@
+:root { font-family: Inter, system-ui, Arial, sans-serif; color: #1e293b; background: #f5f7fb; }
+body { margin: 0; background: #f5f7fb; }
+.auth-page { min-height: 100vh; display:flex; align-items:center; justify-content:center; padding:24px; background:linear-gradient(135deg,#eaf1ff,#f8faff); }
+.auth-card { width:100%; max-width:430px; background:white; padding:38px; border-radius:22px; box-shadow:0 18px 55px #263c6817; }
+.brand-mark { width:54px;height:54px;display:grid;place-items:center;border-radius:16px;background:#e9efff;color:#345bd6;font-size:26px; }
+.app-shell { min-height:100vh; display:flex; }
+.sidebar { width:245px; background:#fff; border-right:1px solid #e9edf4; padding:28px 18px; position:fixed; inset:0 auto 0 0; display:flex; flex-direction:column; z-index:2; }
+.brand { font-size:22px;font-weight:800;color:#3158ce;letter-spacing:-.7px; }
+.brand i { margin-right:8px; }
+.side-link { display:flex;align-items:center;gap:13px;border:0;background:transparent;color:#667085;padding:13px 14px;border-radius:11px;text-align:left;margin:3px 0;font-weight:600; }
+.side-link:hover,.side-link.active { background:#edf2ff;color:#3158ce; }
+.side-link i { font-size:18px; }
+.sidebar-bottom { margin-top:auto;border-top:1px solid #edf0f5;padding-top:18px; }
+.main-content { margin-left:245px;width:calc(100% - 245px);padding:0 34px 40px; }
+.topbar { height:94px;display:flex;align-items:center;justify-content:space-between;margin-bottom:26px;border-bottom:1px solid #e9edf4; }
+.avatar { width:42px;height:42px;display:grid;place-items:center;border-radius:50%;background:#3158ce;color:#fff;font-weight:700; }
+.welcome-panel { background:linear-gradient(110deg,#3158ce,#6c8cf1);color:white;padding:30px 34px;border-radius:20px;display:flex;justify-content:space-between;align-items:center; }
+.welcome-panel p { color:#e6ecff; }
+.stat-card,.job-card,.form-panel { background:#fff;border:1px solid #edf0f5;border-radius:17px;padding:23px;box-shadow:0 5px 20px #1d35570a; }
+.stat-card { display:flex;justify-content:space-between;align-items:center; }
+.stat-icon { font-size:27px;color:#5272dc;background:#edf2ff;padding:12px;border-radius:13px; }
+.section-heading { display:flex;align-items:center;justify-content:space-between;margin:28px 0 17px; }
+.job-card { transition:transform .2s,box-shadow .2s; }
+.job-card:hover { transform:translateY(-3px);box-shadow:0 12px 28px #1d355712; }
+.job-symbol { width:42px;height:42px;display:grid;place-items:center;background:#edf2ff;color:#3158ce;border-radius:12px;font-size:20px; }
+.job-description { color:#667085;line-height:1.55;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden; }
+.search-box { display:flex;gap:10px;background:#fff;padding:12px;border-radius:15px;border:1px solid #edf0f5; }
+.search-box input { border:0;box-shadow:none!important; }
+.form-panel { max-width:760px; }
+.table th { color:#667085;font-size:13px;font-weight:600;background:#f9fafc; }
+@media(max-width:768px) {
+ .sidebar { width:72px;padding:22px 10px; }
+ .brand { font-size:0;text-align:center; }.brand i { font-size:23px;margin:0; }
+ .side-link { justify-content:center;font-size:0;padding:13px 8px; }.side-link i { font-size:20px; }
+ .sidebar-bottom { font-size:0;text-align:center; }.sidebar-bottom strong { display:none; }
+ .main-content { margin-left:72px;width:calc(100% - 72px);padding:0 16px 30px; }
+ .topbar { height:80px; }.welcome-panel { padding:23px; }.welcome-panel .display-3 { font-size:35px; }
+ .auth-card { padding:26px; }
+}
